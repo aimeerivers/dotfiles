@@ -17,6 +17,7 @@ brew "libyaml"
 brew "lilypond"
 brew "openssl@3"
 brew "python@3.10"
+brew "stow"
 brew "zlib"
 brew "zsh"
 

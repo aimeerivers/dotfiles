@@ -33,7 +33,7 @@ build_xcode
 printf "🍺  Installing Homebrew packages\n"
 install_brew
 
-# printf "🐗  Stow dotfiles\n"
-# stow git zsh
+printf "🐗  Stow dotfiles\n"
+stow zsh
 
 printf "✨  Done!\n"
