@@ -23,6 +23,7 @@ brew "zsh"
 
 cask "1password"
 cask "blackhole-2ch"
+cask "docker"
 cask "dropbox"
 cask "fork"
 cask "hugin"
