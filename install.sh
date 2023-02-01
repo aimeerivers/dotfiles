@@ -34,6 +34,6 @@ printf "🍺  Installing Homebrew packages\n"
 install_brew
 
 printf "🐗  Stow dotfiles\n"
-stow zsh
+stow zsh git
 
 printf "✨  Done!\n"
