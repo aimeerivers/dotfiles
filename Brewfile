@@ -21,6 +21,7 @@ brew "stow"
 brew "zlib"
 brew "zsh"
 
+cask "1password"
 cask "blackhole-2ch"
 cask "fork"
 cask "hugin"
