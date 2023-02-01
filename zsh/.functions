@@ -1,0 +1,15 @@
+# Change tab colours
+tab-color() {
+  echo -ne "\033]6;1;bg;red;brightness;$1\a"
+  echo -ne "\033]6;1;bg;green;brightness;$2\a"
+  echo -ne "\033]6;1;bg;blue;brightness;$3\a"
+}
+
+# Tab colours
+tab-red() { tab-color 250 97 84 }
+tab-orange() { tab-color 245 162 63 }
+tab-yellow() { tab-color 238 215 70 }
+tab-green() { tab-color 172 209 64 }
+tab-blue() { tab-color 84 153 247 }
+tab-purple() { tab-color 185 131 212 }
+tab-reset() { echo -ne "\033]6;1;bg;*;default\a" }
