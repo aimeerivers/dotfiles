@@ -22,6 +22,7 @@ brew "zsh"
 
 cask "blackhole-2ch"
 cask "hugin"
+cask "iterm2"
 cask "spotify"
 cask "time-out"
 cask "vlc"
