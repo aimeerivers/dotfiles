@@ -1,2 +1,4 @@
 alias whatsmyip="ipconfig getifaddr en0"
 alias httpserver="python3 -m http.server"
+alias editdotfiles="cd $HOME/.dotfiles && code ."
+alias reloadzsh="echo 'reloading zsh ...' && source $HOME/.zshrc && echo 'done'"

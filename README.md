@@ -12,10 +12,19 @@ To install:
 
 This expands to [run.sh](https://github.com/sermoa/dotfiles/blob/main/run.sh) which will fetch this repo and run the install script.
 
-## Update
+## Make changes
 
-    cd ~/.dotfiles
+    editdotfiles
+
+This should put you in the right directory and open Visual Studio Code for you to be able to make changes.
+
+If you update the Brewfile
+
     brew bundle
+
+If you update `zsh/.zshrc` or `zsh/.aliases`
+
+    reloadzsh
 
 ## Inspiration
 
