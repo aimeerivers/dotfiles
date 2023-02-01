@@ -21,6 +21,7 @@ brew "zlib"
 brew "zsh"
 
 cask "blackhole-2ch"
+cask "fork"
 cask "hugin"
 cask "iterm2"
 cask "spotify"
