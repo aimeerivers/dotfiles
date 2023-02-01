@@ -18,6 +18,7 @@ brew "lilypond"
 brew "openssl@3"
 brew "python@3.10"
 brew "zlib"
+brew "zsh"
 
 cask "blackhole-2ch"
 cask "hugin"
