@@ -21,7 +21,7 @@ install_brew() {
     eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 
-  sudo softwareupdate --install-rosetta
+  # sudo softwareupdate --install-rosetta
 
   printf "Installing homebrew packages..."
   brew bundle
