@@ -91,14 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-function editconfig {
-  echo "Editing ~/.zshrc ...";
-  vim ~/.zshrc;
-  echo "Reloading ...";
-  source ~/.zshrc;
-  echo "Done";
-}
-
 # Load aliases
 source $HOME/.aliases
 
