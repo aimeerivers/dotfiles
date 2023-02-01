@@ -25,6 +25,10 @@ If you update the Brewfile
 If you update `zsh/.zshrc` or `zsh/.aliases`
 
     reloadzsh
+
+If you want to reconfigure everything
+
+    ./install.sh
     
 ## Customisation
 
