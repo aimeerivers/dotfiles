@@ -10,7 +10,7 @@ To install:
 
     curl -L https://raw.githubusercontent.com/sermoa/dotfiles/main/run.sh | sh
 
-This expands to [run.sh](https://github.com/sermoa/dotfiles/blob/main/run.sh) which will fetch this repo and run the install script.
+This expands to [run.sh](./run.sh) which will fetch this repo and run the install script.
 
 ## Make changes
 
@@ -25,6 +25,16 @@ If you update the Brewfile
 If you update `zsh/.zshrc` or `zsh/.aliases`
 
     reloadzsh
+    
+## Customisation
+
+###  Git
+
+Be sure to update the user name and email values in the global [.gitconfig](./git/.gitconfig)
+
+### zsh theme
+
+The zsh theme is [miloshadzic](https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/miloshadzic.zsh-theme)
 
 ## Inspiration
 
