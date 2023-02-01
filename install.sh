@@ -27,6 +27,11 @@ install_brew() {
   brew bundle
 }
 
+activate_symlinks() {
+  # vscode
+  ln -sf $HOME/.dotfiles/visual-studio-code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+}
+
 printf "🛠  Installing Xcode Command Line Tools\n"
 build_xcode
 
@@ -35,5 +40,8 @@ install_brew
 
 printf "🐗  Stow dotfiles\n"
 stow zsh git
+
+printf "⚡️  Activate extra symlinks\n"
+activate_symlinks
 
 printf "✨  Done!\n"
