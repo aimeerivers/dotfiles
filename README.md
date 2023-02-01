@@ -10,5 +10,8 @@ To install:
 
 `curl -L https://raw.githubusercontent.com/sermoa/dotfiles/main/run.sh | sh`
 
-This expands to [run.sh](https://github.com/dineshraj/dotfiles/blob/main/run.sh) which will fetch this repo and run the install script.
+This expands to [run.sh](https://github.com/sermoa/dotfiles/blob/main/run.sh) which will fetch this repo and run the install script.
 
+## Inspiration
+
+* [dineshraj/dotfiles](https://github.com/dineshraj/dotfiles)
