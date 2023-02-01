@@ -8,9 +8,14 @@ Before you get started make sure you give full disk access permission to your te
 
 To install:
 
-`curl -L https://raw.githubusercontent.com/sermoa/dotfiles/main/run.sh | sh`
+    curl -L https://raw.githubusercontent.com/sermoa/dotfiles/main/run.sh | sh
 
 This expands to [run.sh](https://github.com/sermoa/dotfiles/blob/main/run.sh) which will fetch this repo and run the install script.
+
+## Update
+
+    cd ~/.dotfiles
+    brew bundle
 
 ## Inspiration
 
