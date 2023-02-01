@@ -1,5 +1,5 @@
 if type git >/dev/null; then
-  git clone https://github.com/sermoa/dotfiles ~/.dotfiles
+  git clone git@github.com:sermoa/dotfiles.git ~/.dotfiles
   chmod +x ~/.dotfiles
   cd ~/.dotfiles
   ./install.sh
