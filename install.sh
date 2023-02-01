@@ -32,6 +32,18 @@ activate_symlinks() {
   ln -sf $HOME/.dotfiles/visual-studio-code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 }
 
+install_oh_my_zsh_plugins() {
+  for plugin in zsh-syntax-highlighting zsh-completions zsh-autosuggestions; do
+    echo ${plugin}
+    if [ ! -d $HOME/.oh-my-zsh/plugins/${plugin} ]; then
+      git clone git@github.com:zsh-users/${plugin}.git $HOME/.oh-my-zsh/plugins/${plugin}
+    else
+      cd $HOME/.oh-my-zsh/plugins/${plugin}
+      git pull
+    fi
+  done
+}
+
 printf "🛠  Installing Xcode Command Line Tools\n"
 build_xcode
 
@@ -43,5 +55,8 @@ stow zsh git
 
 printf "⚡️  Activate extra symlinks\n"
 activate_symlinks
+
+printf "😲  Install/update oh my zsh plugins\n"
+install_oh_my_zsh_plugins
 
 printf "✨  Done!\n"
