@@ -32,6 +32,12 @@ activate_symlinks() {
   ln -sf $HOME/.dotfiles/visual-studio-code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 }
 
+install_oh_my_zsh() {
+  if [ ! -d $HOME/.oh-my-zsh ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  fi
+}
+
 install_oh_my_zsh_plugins() {
   for plugin in zsh-syntax-highlighting zsh-completions zsh-autosuggestions; do
     echo ${plugin}
@@ -50,13 +56,16 @@ build_xcode
 printf "🍺  Installing Homebrew packages\n"
 install_brew
 
+printf "😲  Install oh my zsh\n"
+install_oh_my_zsh
+
+printf "😲  Install/update oh my zsh plugins\n"
+install_oh_my_zsh_plugins
+
 printf "🐗  Stow dotfiles\n"
 stow zsh git
 
 printf "⚡️  Activate extra symlinks\n"
 activate_symlinks
-
-printf "😲  Install/update oh my zsh plugins\n"
-install_oh_my_zsh_plugins
 
 printf "✨  Done!\n"
