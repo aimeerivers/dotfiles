@@ -12,6 +12,28 @@ To install:
 
 This expands to [run.sh](./run.sh) which will fetch this repo and run the install script.
 
+## Fix Github access
+
+Generate a public ssh key if you don't already have one
+
+    cd ~/.ssh
+    ssh-keygen -t rsa -b 4096 -C "mailaddress"
+
+Copy the ssh public key to your clipboard
+
+    pbcopy < ~/.ssh/id_rsa.pub
+
+Enter it at https://github.com/settings/ssh/new
+
+Test that it worked
+
+    ssh -T git@github.com
+
+Now you should be able to run intstall again
+
+    cd ~/.dotfiles
+    ./install.sh
+
 ## Post-install
 
 We had to install using HTTPS. If you want to change to SSH after authenticating with Github, use the following:
