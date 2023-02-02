@@ -62,6 +62,10 @@ install_oh_my_zsh
 printf "😲  Install/update oh my zsh plugins\n"
 install_oh_my_zsh_plugins
 
+printf "🔌 Configure iTerm2\n"
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/iterm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
 printf "🐗  Stow dotfiles\n"
 stow zsh git
 
