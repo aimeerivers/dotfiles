@@ -12,6 +12,13 @@ To install:
 
 This expands to [run.sh](./run.sh) which will fetch this repo and run the install script.
 
+## Post-install
+
+We had to install using HTTPS. If you want to change to SSH after authenticating with Github, use the following:
+
+    git remote remove origin
+    git remote add origin git@github.com:sermoa/dotfiles.git
+
 ## Make changes
 
     editdotfiles
