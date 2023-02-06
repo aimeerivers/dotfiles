@@ -1,6 +1,7 @@
 {
     "editor.tabSize": 2,
-    "workbench.colorTheme": "Visual Studio Dark",
-    "editor.fontSize": 14,
+    "workbench.colorTheme": "SynthWave '84",
+    "synthwave84.brightness": 0.45,
+    "editor.fontSize": 18,
     "window.zoomLevel": 1
 }
