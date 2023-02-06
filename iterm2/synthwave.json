@@ -44,7 +44,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.25490197539329529
   },
-  "Guid" : "46B21CA2-DEE5-46E0-9A46-09CC34C4B575",
+  "Guid" : "34AF7E5E-DF0D-4CA8-B289-381D22E5E788",
   "Horizontal Spacing" : 1,
   "Rows" : 25,
   "Default Bookmark" : "No",
@@ -58,11 +58,11 @@
   "Non-ASCII Anti Aliased" : true,
   "Use Bright Bold" : true,
   "Ansi 10 Color" : {
-    "Red Component" : 0.14509804546833038,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.25490197539329529,
+    "Red Component" : 0.49886499345302582,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.61655289928118395,
     "Alpha Component" : 1,
-    "Green Component" : 0.75686275959014893
+    "Green Component" : 0.8519287109375
   },
   "Ambiguous Double Width" : false,
   "Jobs to Ignore" : [
@@ -96,7 +96,7 @@
   "Mouse Reporting" : true,
   "Screen" : -1,
   "Selection Color" : {
-    "Red Component" : 0.098039217293262482,
+    "Red Component" : 0.098039217293262454,
     "Color Space" : "Calibrated",
     "Blue Component" : 0.90196079015731812,
     "Alpha Component" : 1,
@@ -321,7 +321,7 @@
   "Flashing Bell" : false,
   "Silence Bell" : false,
   "Ansi 14 Color" : {
-    "Red Component" : 0.098039217293262482,
+    "Red Component" : 0.098039217293262454,
     "Color Space" : "Calibrated",
     "Blue Component" : 0.90196079015731812,
     "Alpha Component" : 1,
@@ -337,7 +337,7 @@
   },
   "Shortcut" : "",
   "Cursor Color" : {
-    "Red Component" : 0.098039217293262482,
+    "Red Component" : 0.098039217293262454,
     "Color Space" : "Calibrated",
     "Blue Component" : 0.90196079015731812,
     "Alpha Component" : 1,
@@ -352,11 +352,11 @@
     "Green Component" : 0.094117648899555206
   },
   "Ansi 2 Color" : {
-    "Red Component" : 0.11764705926179886,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.16862745583057404,
+    "Red Component" : 0.35893958527594805,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.51548731140792381,
     "Alpha Component" : 1,
-    "Green Component" : 0.73333334922790527
+    "Green Component" : 0.828582763671875
   },
   "Ansi 3 Color" : {
     "Red Component" : 0.99215686321258545,
