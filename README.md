@@ -41,6 +41,22 @@ We had to install using HTTPS. If you want to change to SSH after authenticating
     git remote remove origin
     git remote add origin git@github.com:sermoa/dotfiles.git
 
+## Synthwave Themes
+
+### iTerm2
+
+Go to preferences -> profiles and import [iterm2/synthwave.json](./iterm2/synthwave.json)
+
+### Visual Studio Code
+
+Install [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
+
+`Cmd + Shift + P` and `Enable Neon Dreams`
+
+Install [Fix VSCode Checksums](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums)
+
+`Cmd + Shift + P` and `Fix Checksums: Apply`
+
 ## Make changes
 
     editdotfiles
