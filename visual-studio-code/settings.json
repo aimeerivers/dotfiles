@@ -3,5 +3,16 @@
     "workbench.colorTheme": "SynthWave '84",
     "synthwave84.brightness": 0.45,
     "editor.fontSize": 16,
+    "playwright.reuseBrowser": false,
+    "cucumber.features": [
+        "features/**/*.feature"
+    ],
+    "cucumber.glue": [
+
+        "steps/**/*.steps.ts"
+    ],
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
     "window.zoomLevel": 1
 }
