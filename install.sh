@@ -67,7 +67,7 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dot
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 printf "🐗  Stow dotfiles\n"
-stow zsh git
+stow --dotfiles zsh git
 
 printf "🔗  Activate extra symlinks\n"
 activate_symlinks
