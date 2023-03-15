@@ -69,7 +69,7 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 printf "🐗  Stow dotfiles\n"
 stow zsh git
 
-printf "⚡️  Activate extra symlinks\n"
+printf "🔗  Activate extra symlinks\n"
 activate_symlinks
 
 printf "✨  Done!\n"
