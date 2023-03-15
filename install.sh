@@ -14,7 +14,7 @@ build_xcode() {
 
 install_brew() {
   if ! command -v "brew" &>/dev/null; then
-    printf "Homebrew not found, installing."
+    printf "\nHomebrew not found, installing."
     # install homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     # set path
@@ -23,7 +23,7 @@ install_brew() {
 
   # sudo softwareupdate --install-rosetta
 
-  printf "Installing homebrew packages..."
+  printf "\nInstalling homebrew packages..."
   brew bundle
 }
 
@@ -54,29 +54,29 @@ install_oh_my_zsh_plugins() {
   done
 }
 
-printf "🛠  Install Xcode Command Line Tools\n"
+printf "\n🛠  Install Xcode Command Line Tools\n"
 build_xcode
 
-printf "🍺  Install Homebrew packages\n"
+printf "\n🍺  Install Homebrew packages\n"
 install_brew
 
-printf "🎹 Install global npm packages\n"
+printf "\n🎹 Install global npm packages\n"
 install_npm_packages
 
-printf "🐗  Stow dotfiles\n"
+printf "\n🐗  Stow dotfiles\n"
 stow --dotfiles zsh git commitizen
 
-printf "😲  Install oh my zsh\n"
+printf "\n😲  Install oh my zsh\n"
 install_oh_my_zsh
 
-printf "😲  Install/update oh my zsh plugins\n"
+printf "\n😲  Install/update oh my zsh plugins\n"
 install_oh_my_zsh_plugins
 
-printf "🔌 Configure iTerm2\n"
+printf "\n🔌 Configure iTerm2\n"
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/iterm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
-printf "🔗  Activate extra symlinks\n"
+printf "\n🔗  Activate extra symlinks\n"
 activate_symlinks
 
-printf "✨  Done!\n"
+printf "\n✨  Done!\n"
