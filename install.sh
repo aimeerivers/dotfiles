@@ -27,6 +27,10 @@ install_brew() {
   brew bundle
 }
 
+install_npm_packages() {
+  npm install -g commitizen cz-conventional-changelog
+}
+
 activate_symlinks() {
   # vscode
   ln -sf $HOME/.dotfiles/visual-studio-code/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
@@ -55,6 +59,9 @@ build_xcode
 
 printf "🍺  Install Homebrew packages\n"
 install_brew
+
+printf "🎹 Install global npm packages\n"
+install_npm_packages
 
 printf "🐗  Stow dotfiles\n"
 stow --dotfiles zsh git
