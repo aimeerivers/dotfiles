@@ -64,7 +64,7 @@ printf "🎹 Install global npm packages\n"
 install_npm_packages
 
 printf "🐗  Stow dotfiles\n"
-stow --dotfiles zsh git
+stow --dotfiles zsh git commitizen
 
 printf "😲  Install oh my zsh\n"
 install_oh_my_zsh
