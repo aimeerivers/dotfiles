@@ -56,6 +56,9 @@ build_xcode
 printf "🍺  Install Homebrew packages\n"
 install_brew
 
+printf "🐗  Stow dotfiles\n"
+stow --dotfiles zsh git
+
 printf "😲  Install oh my zsh\n"
 install_oh_my_zsh
 
@@ -65,9 +68,6 @@ install_oh_my_zsh_plugins
 printf "🔌 Configure iTerm2\n"
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/iterm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-
-printf "🐗  Stow dotfiles\n"
-stow --dotfiles zsh git
 
 printf "🔗  Activate extra symlinks\n"
 activate_symlinks
