@@ -50,10 +50,10 @@ install_oh_my_zsh_plugins() {
   done
 }
 
-printf "🛠  Installing Xcode Command Line Tools\n"
+printf "🛠  Install Xcode Command Line Tools\n"
 build_xcode
 
-printf "🍺  Installing Homebrew packages\n"
+printf "🍺  Install Homebrew packages\n"
 install_brew
 
 printf "😲  Install oh my zsh\n"
