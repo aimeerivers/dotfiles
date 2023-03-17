@@ -3,3 +3,5 @@
 [user]
 	name = aimee rivers
 	email = aimee@aimeerivers.com
+[alias]
+	hist = log --oneline --graph --decorate --all
