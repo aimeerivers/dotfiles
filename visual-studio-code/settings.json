@@ -3,7 +3,7 @@
     "workbench.colorTheme": "SynthWave '84",
     "synthwave84.brightness": 0.45,
     "editor.fontSize": 16,
-    "playwright.reuseBrowser": false,
+    "playwright.reuseBrowser": true,
     "cucumber.features": [
         "features/**/*.feature"
     ],
