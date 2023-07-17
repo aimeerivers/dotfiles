@@ -1,7 +1,6 @@
 {
     "editor.tabSize": 2,
-    "workbench.colorTheme": "SynthWave '84",
-    "synthwave84.brightness": 0.45,
+    "workbench.colorTheme": "Rainbow",
     "editor.fontSize": 16,
     "playwright.reuseBrowser": true,
     "cucumber.features": [

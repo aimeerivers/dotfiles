@@ -57,6 +57,12 @@ Install [Fix VSCode Checksums](https://marketplace.visualstudio.com/items?itemNa
 
 `Cmd + Shift + P` and `Fix Checksums: Apply`
 
+## Rainbow Themes
+
+### Visual Studio Code
+
+    code --install-extension visual-studio-code/rainbow-color-theme-0.0.1.vsix
+
 ## Make changes
 
     editdotfiles
