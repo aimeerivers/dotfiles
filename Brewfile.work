@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 
 cask "charles"
+cask "elgato-stream-deck"
 cask "postman"
 cask "tableplus"
