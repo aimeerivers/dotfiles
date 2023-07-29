@@ -27,6 +27,16 @@ install_brew() {
   brew bundle
 }
 
+install_additional_brew() {
+  for plugin in home work; do
+    read -p "Do you want to install Homebrew packages from the '${plugin}' profile? (y/n) " -n 1;
+    echo "";
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+      brew bundle --file=Brewfile.${plugin}
+    fi
+  done
+}
+
 install_npm_packages() {
   npm install -g commitizen cz-conventional-changelog
 }
@@ -50,6 +60,7 @@ install_oh_my_zsh_plugins() {
     else
       cd $HOME/.oh-my-zsh/plugins/${plugin}
       git pull
+      cd -
     fi
   done
 }
@@ -78,5 +89,8 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 printf "\n🔗 Activate extra symlinks\n"
 activate_symlinks
+
+printf "\n🍺 Install additional Homebrew packages\n"
+install_additional_brew
 
 printf "\n✨ Done!\n"
