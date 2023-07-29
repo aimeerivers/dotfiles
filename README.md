@@ -8,7 +8,7 @@ Before you get started make sure you give full disk access permission to your te
 
 To install:
 
-    curl -L https://raw.githubusercontent.com/sermoa/dotfiles/main/run.sh | sh
+    curl -L https://raw.githubusercontent.com/aimeerivers/dotfiles/main/run.sh | sh
 
 This expands to [run.sh](./run.sh) which will fetch this repo and run the install script.
 
@@ -39,7 +39,7 @@ Now you should be able to run intstall again
 We had to install using HTTPS. If you want to change to SSH after authenticating with Github, use the following:
 
     git remote remove origin
-    git remote add origin git@github.com:sermoa/dotfiles.git
+    git remote add origin git@github.com:aimeerivers/dotfiles.git
 
 ## Synthwave Themes
 
