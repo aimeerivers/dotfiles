@@ -108,3 +108,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/aimeerivers/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# Force node 20
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
