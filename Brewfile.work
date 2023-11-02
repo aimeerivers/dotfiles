@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 
 brew "node@20"
+brew "postgresql@14"
 
 cask "charles"
 cask "elgato-stream-deck"
