@@ -13,6 +13,16 @@
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "editor.inlineSuggest.enabled": true,
+    "editor.codeActionsOnSave": {},
+    "sonarlint.rules": {
+        "typescript:S6544": {
+            "level": "off"
+        }
+    },
     "window.zoomLevel": 1,
-    "editor.inlineSuggest.enabled": true
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "editor.renderWhitespace": "all"
 }
