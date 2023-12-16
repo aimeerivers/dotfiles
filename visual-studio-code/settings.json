@@ -4,11 +4,12 @@
     "editor.fontSize": 16,
     "playwright.reuseBrowser": true,
     "cucumber.features": [
-        "features/**/*.feature"
+        "features/**/*.feature",
+        "cucumber/features/**/*.feature"
     ],
     "cucumber.glue": [
-
-        "steps/**/*.steps.ts"
+        "steps/**/*.steps.ts",
+        "cucumber/steps/**/*.steps.ts"
     ],
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -24,5 +25,5 @@
     "[shellscript]": {
         "editor.defaultFormatter": "foxundermoon.shell-format"
     },
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
 }
