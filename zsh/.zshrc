@@ -111,3 +111,6 @@ export PATH="/Users/aimeerivers/.rd/bin:$PATH"
 
 # Force node 20
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
