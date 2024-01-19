@@ -6,6 +6,7 @@ brew "postgresql@14"
 
 cask "charles"
 cask "elgato-stream-deck"
+cask "microsoft-teams"
 cask "postman"
 cask "rancher"
 cask "slack"
