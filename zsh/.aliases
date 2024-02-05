@@ -8,6 +8,8 @@ alias developers-service="cd ~/hedia/services/developers-service && npm install 
 alias id-service="cd ~/hedia/services/id-service && npm install && open http://localhost:7368 && npm run dev"
 alias oauth2-service="cd ~/hedia/services/oauth2-service && npm install && npm run dev"
 alias data-service="cd ~/hedia/services/data-service && npm install && npm run build && npm run setup && npm run dev"
+alias mail-service="cd ~/hedia/services/mail-service && npm install && npm run dev"
+alias brevo-service="cd ~/hedia/services/brevo-service && npm install && npm run dev"
 alias hedia-server="cd ~/hedia/services/hedia-server && npm install && npm run dev"
 
 # hedia modules
