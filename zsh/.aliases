@@ -3,14 +3,24 @@ alias httpserver="python3 -m http.server"
 alias editdotfiles="cd $HOME/.dotfiles && code ."
 alias reloadzsh="echo 'reloading zsh ...' && source $HOME/.zshrc && echo 'done'"
 
-# hedia services
+# hedia dev services
 alias developers-service="cd ~/hedia/services/developers-service && npm install && open http://localhost:6869 && npm run dev"
 alias id-service="cd ~/hedia/services/id-service && npm install && open http://localhost:7368 && npm run dev"
 alias oauth2-service="cd ~/hedia/services/oauth2-service && npm install && npm run dev"
 alias data-service="cd ~/hedia/services/data-service && npm install && npm run build && npm run setup && npm run dev"
+alias hedia-server="cd ~/hedia/services/hedia-server && npm install && npm run dev"
+
+# hedia integration services
 alias mail-service="cd ~/hedia/services/mail-service && npm install && npm run dev"
 alias brevo-service="cd ~/hedia/services/brevo-service && npm install && npm run dev"
-alias hedia-server="cd ~/hedia/services/hedia-server && npm install && npm run dev"
+
+# hedia org services
+alias org-service="cd ~/hedia/services/org-service && npm install && open http://localhost:7982 && npm run dev"
+alias admin-service="cd ~/hedia/services/admin-service && npm install && open http://localhost:6568 && npm run dev"
+alias sonarcloud-service="cd ~/hedia/services/sonarcloud-service && npm install && open http://localhost:8379 && npm run dev"
+
+# hedia other services
+alias train-service="cd ~/hedia/services/train-service && npm install && open http://localhost:8483 && npm run dev"
 
 # hedia modules
 alias windfall="cd ~/hedia/modules/windfall && npm install && open http://localhost:8080 && npm run dev"
