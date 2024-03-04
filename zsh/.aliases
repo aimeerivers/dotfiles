@@ -8,7 +8,9 @@ alias reloadzsh="echo 'reloading zsh ...' && source $HOME/.zshrc && echo 'done'"
 alias developers-service="cd ~/hedia/services/developers-service && npm install && open http://localhost:6869 && npm run dev"
 alias id-service="cd ~/hedia/services/id-service && npm install && open http://localhost:7368 && npm run dev"
 alias oauth2-service="cd ~/hedia/services/oauth2-service && npm install && npm run dev"
-alias data-service="cd ~/hedia/services/data-service && npm install && npm run build && npm run setup && npm run dev"
+alias data-service="cd ~/hedia/services/data-service && npm install && npm run build && npm run setup && npm run start"
+alias event-service="cd ~/hedia/services/event-service && npm install && npm run build && npm run setup && npm run start"
+alias webhook-service="cd ~/hedia/services/webhook-service && npm install && npm run build && npm run setup && npm run start"
 alias hedia-server="cd ~/hedia/services/hedia-server && npm install && npm run dev"
 
 # hedia integration services
@@ -17,11 +19,16 @@ alias brevo-service="cd ~/hedia/services/brevo-service && npm install && npm run
 
 # hedia org services
 alias org-service="cd ~/hedia/services/org-service && npm install && open http://localhost:7982 && npm run dev"
+alias tracking-service="cd ~/hedia/services/tracking-service && npm install && npm run dev"
+alias licensing-service="cd ~/hedia/services/licensing-service && npm install && npm run dev"
 alias admin-service="cd ~/hedia/services/admin-service && npm install && open http://localhost:6568 && npm run dev"
 alias sonarcloud-service="cd ~/hedia/services/sonarcloud-service && npm install && open http://localhost:8379 && npm run dev"
+alias scalingo-service="cd ~/hedia/services/scalingo-service && npm install && open http://localhost:8367 && npm run dev"
+alias github-service="cd ~/hedia/services/github-service && npm install && open http://localhost:7172 && npm run dev"
 
 # hedia other services
 alias train-service="cd ~/hedia/services/train-service && npm install && open http://localhost:8483 && npm run dev"
+alias test-service="cd ~/hedia/services/test-service && npm install && open http://localhost:8469/reports && npm run dev"
 
 # hedia modules
 alias windfall="cd ~/hedia/modules/windfall && npm install && open http://localhost:8080 && npm run dev"
