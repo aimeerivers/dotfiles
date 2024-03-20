@@ -5,7 +5,7 @@ alias editdotfiles="cd $HOME/.dotfiles && code ."
 alias reloadzsh="echo 'reloading zsh ...' && source $HOME/.zshrc && echo 'done'"
 
 # hedia dev services
-alias developers-service="cd ~/hedia/services/developers-service && npm install && open http://localhost:6869 && npm run dev"
+alias developer-service="cd ~/hedia/services/developer-service && npm install && open http://localhost:6869 && npm run dev"
 alias id-service="cd ~/hedia/services/id-service && npm install && open http://localhost:7368 && npm run dev"
 alias oauth2-service="cd ~/hedia/services/oauth2-service && npm install && npm run dev"
 alias data-service="cd ~/hedia/services/data-service && npm install && npm run build && npm run setup && npm run start"
@@ -26,9 +26,18 @@ alias sonarcloud-service="cd ~/hedia/services/sonarcloud-service && npm install 
 alias scalingo-service="cd ~/hedia/services/scalingo-service && npm install && open http://localhost:8367 && npm run dev"
 alias github-service="cd ~/hedia/services/github-service && npm install && open http://localhost:7172 && npm run dev"
 
+# hedia apps
+alias hedia-app="cd ~/hedia/apps/app && npm install && open http://localhost:6580 && npm run dev"
+alias demo-app="cd ~/hedia/apps/demo-app && npm install && open http://localhost:6865 && npm run dev"
+alias dexcom-app="cd ~/hedia/apps/dexcom-app && npm install && open http://localhost:6888 && npm run dev"
+
 # hedia other services
 alias train-service="cd ~/hedia/services/train-service && npm install && open http://localhost:8483 && npm run dev"
 alias test-service="cd ~/hedia/services/test-service && npm install && open http://localhost:8469/reports && npm run dev"
+alias placeholder-service="cd ~/hedia/services/placeholder-service && npm install && open http://localhost:8076 && npm run dev"
 
 # hedia modules
 alias windfall="cd ~/hedia/modules/windfall && npm install && open http://localhost:8080 && npm run dev"
+
+# hedia test
+alias e2e-service="cd ~/hedia/test/e2e-service && npm run service"
