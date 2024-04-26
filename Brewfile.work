@@ -5,6 +5,7 @@ brew "node@20"
 brew "postgresql@14"
 brew "redis"
 
+cask "1password-cli"
 cask "charles"
 cask "elgato-stream-deck"
 cask "microsoft-teams"
