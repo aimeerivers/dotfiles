@@ -13,3 +13,57 @@ tab-green() { tab-color 172 209 64 }
 tab-blue() { tab-color 84 153 247 }
 tab-purple() { tab-color 185 131 212 }
 tab-reset() { echo -ne "\033]6;1;bg;*;default\a" }
+
+# Review PR
+pr-review-by-head() {
+  if [ $# -ne 1 ] ; then
+    echo "Usage: ${0##*/} BRANCH-NAME" >&2
+    return
+  fi
+
+  HEAD=$1
+  number=$( gh pr list --search "review:required" --head "$HEAD" --json number --jq '.[].number' )
+
+  if [ -z "$number" ] ; then
+    echo "Couldn't find that PR"
+    return
+  fi
+
+  gh pr view $number
+  gh pr diff $number
+
+  read "ok? Enter 'y' to approve: "
+
+  if [ "$ok" = "y" ] ; then
+    gh pr review $number --approve
+  fi
+}
+
+# with each cwd
+with-each-cwd() {
+  declare -a dirs
+  while [ $# != 0 -a "$1" != "--" ] ; do
+    dirs=( "${dirs[@]}" "$1" )
+    shift
+  done
+
+  if [ $# = 0 ] ; then
+    echo "Usage: with-each-cwd DIR ... -- CMD AND ARGS" >&2
+    return
+  fi
+
+  shift
+
+  rc=0
+  for dir in "${dirs[@]}" ; do
+    if pushd "$dir" >/dev/null ; then
+      printf '%s\n' "$dir"
+      if ! "$@" ; then rc=1 ; fi
+      popd >/dev/null
+    else
+      rc=1
+    fi
+  done
+
+  return $rc
+}
