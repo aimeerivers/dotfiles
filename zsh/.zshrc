@@ -114,3 +114,5 @@ export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+export HEDIA_MODULES_DIR=$HOME/hedia/modules
