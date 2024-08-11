@@ -38,7 +38,7 @@ install_additional_brew() {
 }
 
 install_npm_packages() {
-  npm install -g commitizen cz-conventional-changelog
+  npm install -g commitizen cz-conventional-changelog fixpack
 }
 
 activate_symlinks() {
