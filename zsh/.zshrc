@@ -109,8 +109,10 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/Users/aimeerivers/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
-# Force node 20
-export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+# Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
