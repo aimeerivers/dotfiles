@@ -2,14 +2,6 @@
     "editor.tabSize": 2,
     "editor.fontSize": 16,
     "playwright.reuseBrowser": true,
-    "cucumber.features": [
-        "features/**/*.feature",
-        "cucumber/features/**/*.feature"
-    ],
-    "cucumber.glue": [
-        "steps/**/*.steps.ts",
-        "cucumber/steps/**/*.steps.ts"
-    ],
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
