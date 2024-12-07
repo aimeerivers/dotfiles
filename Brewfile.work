@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 
 brew "gh"
-brew "node@20"
 brew "postgresql@14"
 brew "redis"
 
