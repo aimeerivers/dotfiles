@@ -3,5 +3,4 @@ tap "homebrew/bundle"
 brew "lilypond"
 brew "node"
 
-cask "hugin"
 cask "musescore"
