@@ -10,6 +10,9 @@
     "sonarlint.rules": {
         "typescript:S6544": {
             "level": "off"
+        },
+        "typescript:S1534": {
+            "level": "off"
         }
     },
     "window.zoomLevel": 1,
@@ -21,5 +24,11 @@
     "typescript.preferences.quoteStyle": "double",
     "github.copilot.editor.enableAutoCompletions": true,
     "explorer.confirmDelete": false,
-    "workbench.colorTheme": "Dark Horizon"
+    "workbench.colorTheme": "Dark Horizon",
+    "database-client.autoSync": true,
+    "[sql]": {
+        "editor.defaultFormatter": "cweijan.vscode-postgresql-client2"
+    },
+    "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+    "docker.extension.enableComposeLanguageServer": false,
 }

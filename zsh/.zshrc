@@ -114,3 +114,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 export HEDIA_MODULES_DIR=$HOME/hedia/modules
+
+export ANDROID_HOME=/Users/aimeerivers/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools

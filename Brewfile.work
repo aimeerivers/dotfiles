@@ -1,7 +1,9 @@
 tap "homebrew/bundle"
 
 brew "gh"
-brew "postgresql@14"
+brew "go"
+brew "node@20"
+brew "postgresql@16"
 brew "redis"
 
 cask "1password-cli"
